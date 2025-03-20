@@ -1,0 +1,9 @@
+### Rate Ride
+POST {{host}}/ride-ratings
+Content-Type: application/json
+
+{
+  "rideId": 23,
+  "rating": 5,
+  "comment": "..."
+}

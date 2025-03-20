@@ -1,0 +1,23 @@
+### Find all
+GET {{host}}/users
+
+### Find by id
+GET {{host}}/users/4
+
+### Update
+PUT {{host}}/users/2
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "email": "seconduser@gmail.com",
+  "password": "pass",
+  "firstName": "second",
+  "lastName": "user",
+  "phoneNumber": "0722333333",
+  "birthDate": "2000-02-05"
+}
+
+### Delete
+DELETE {{host}}/users/7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQ4OTc0MTYsImlzcyI6Ind3dy5yaWRlc2hhcmUucGFnZXMuZGV2Iiwic3ViIjoiMyIsImVtYWlsIjoidXNlckBnbWFpbC5jb20iLCJyb2xlIjoiQURNSU4ifQ.O8cV1TPvU3Lf0rKSd9fcrozmHzgpBNSF7MHcYlaAvOU

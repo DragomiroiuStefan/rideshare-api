@@ -1,0 +1,48 @@
+### Find rides
+GET {{host}}/rides?departureLocation=4&arrivalLocation=6&date=2024-08-27&seats=2
+Accept: application/json
+
+### Find by id
+GET {{host}}/rides/2
+Accept: application/json
+
+### Publish
+POST {{host}}/rides/publish
+Content-Type: application/json
+
+{
+  "seats": 3,
+  "additionalComment": "",
+  "vehicle": "ABC-130",
+  "connections": [
+    {
+      "departureLocation": 4,
+      "arrivalLocation": 5,
+      "departureTime": "2024-08-27T17:36:43.000000",
+      "arrivalTime": "2024-08-27T19:36:43.000000",
+      "price": 50
+    },
+    {
+      "departureLocation": 5,
+      "arrivalLocation": 6,
+      "departureTime": "2024-08-27T19:36:43.000000",
+      "arrivalTime": "2024-08-27T20:36:43.000000",
+      "price": 30
+    },
+    {
+      "departureLocation": 6,
+      "arrivalLocation": 7,
+      "departureTime": "2024-08-27T20:36:43.000000",
+      "arrivalTime": "2024-08-27T21:36:43.000000",
+      "price": 40
+    }
+  ]
+}
+
+### Update
+PUT {{host}}/rides/2
+Content-Type: application/json
+
+
+### Delete
+DELETE {{host}}/rides/2

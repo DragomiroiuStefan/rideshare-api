@@ -1,0 +1,32 @@
+### Find all
+GET {{host}}/locations
+
+###  Find by City Containing
+GET {{host}}/locations?city=Buc
+
+### Find by id
+GET {{host}}/locations/1
+
+### Create
+POST {{host}}/locations
+Content-Type: application/json
+#Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJSaWRlU2hhcmUiLCJzdWIiOiJhZG1pbkBtLmNvbSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcxNzU2MDY4NCwiZXhwIjoxNzE3NTYxNTg0fQ.bmhpKKHVVPDpRXbTV1rKrYB8XOigH8OtMyD1JzsTtXXRVEJTiA26l4F9axaL5owc29zyB6KZCmKwlvMihdcRvkG09eankw1Z8OgUjZCBQwF0dcCpHQlVcb--3W9Qz89DNhbJDyK5cIofL9AsBPUmn7apclYi5tSQtL1kqlYKGN8-dZazKsVPkxG2B3dSHddggNotu9zR9yg7yj-nWKB9jvlOQ8Nw2DFrYk8OQ4F1ACZFJId9u54YlvxrfsRqnwL5U5CtvS1rt6Qg0hP-4oUWRBzOvMr0_OFPMGHxkWo7mK2yyULKoZAxYWMKeXwRNZ41Qu-IFlYyDx2-oMWAYcF4ZidEkG8EpWA-qZgKMUGCGqR58PGBEKV1u0YywFn7IXAGNwiWl81hjx6Hvo7uA7x1sAztPxdz1mkU0PNnPf_hLTzCFNLk4HbKi32KiwubqdZr2R0fygxr3wVqObDm2QlEKCXj1JncFpN4GzFscF7qu5w2s7ixAHdW13EU_USjE8XsDG2nqktX61jnCmur9rhCYPsYrsc2umE8kbtVCCwukfmCbSederAi4W4Bfg1T9c5GsvFt4m6SF78XoYFNGIUByB0zeJ9nINt1iUMQopGFYwt89ZV9MFVZjxX1DocN2L0x6qOvpIckJJzTIuWu7veVhuw_n3XcqMWf14zSrMy1mT8
+
+{
+  "city": "A",
+  "county": "VL"
+}
+
+### Update
+PUT {{host}}/locations/529
+Content-Type: application/json
+
+{
+  "locationId": 529,
+  "city": "Ult",
+  "county": "VL"
+}
+
+### Delete
+DELETE {{host}}/locations/5
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJSaWRlU2hhcmUiLCJzdWIiOiJmaXJzdHVzZXJAbS5jb20iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcxNzUyMzQ4NCwiZXhwIjoxNzE3NTI0Mzg0fQ.VxyVTy5kUSCCnnXyPJDhuA5GFPIvD_Jz5hh58iR1nml7Zz21XNttsahHz9HDFkhAQ3Vl5n1kflM1CCZOPQNdwHVybyw5pZVR7OlOxODiOOi9iOuCg68U0W5iAPniQG7vyeaVEY_z3uo5zoL9TUQID1syrKp572CfVxDDccsAWxvYkoRsRKXaRMLhHDHvpfIM0nIjN3LXc-Sm7U_dVkamSV9lktvXXh7nHeT2Yf8weQTubJBTOcLvHxdWhm1pBPtsDqYUXT0xXZIGy2gsEORuclOqujjpiopdkgZ5uTSkCIwrH9woTIJiCJq-kJm4kUJjVZmoK_3H_Tc5cIiun6HjWWYaTwno5dJXXvTWatWh_i4W1Y3t6pnP1fwhppy7KUx21G2MDu6zfgLJozdW_51Ubzh0jySNRF_D4oU4wHzkSm8dXrHsGXJS9rDOvWPa7DnUIj7PCGsPmNW3dsqsRy9GfdcW_So4TOLvKOQmQV0d523vtPLqI2xfb3Py9PCkecUNQt7C0uPqxXc3NhEjxXZPPdSXMhkR4m3M7ZTIZjh1wv9hNf9GD2roINtk2t1hYYzMS-uWANDkvKvwNmx18W9aM_xJgItLmvl6tZih7yLcE5NMmyQ99ZBVSEkJ-Csw9MjOadL1jofjJzT-etXKCJSK-hf1fIoVaZ1Mh7dU-dcHZ3g
