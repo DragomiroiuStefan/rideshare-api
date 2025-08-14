@@ -1,31 +1,31 @@
-### Sign Up
-POST {{host}}/auth/signUp
+### Register
+POST {{host}}/auth/register
 Content-Type: application/json
 
 {
-  "email": "admin@m.com",
-  "password": "admin",
-  "firstName": "admin",
-  "lastName": "test",
-  "phoneNumber": "07223",
-  "birthDate": "2000-02-05"
+  "email": "adminuser@rideshare.com",
+  "password": "password",
+  "firstName": "First",
+  "lastName": "Admin",
+  "phoneNumber": "+40700000000",
+  "birthDate": "1990-01-01"
 }
 
-
-### Sign In
-POST {{host}}/auth/signIn
+### Login
+POST {{host}}/auth/login
 Content-Type: application/json
+Authorization: Basic adminuser@rideshare.com password
+
+### Find all
+GET {{host}}/locations
+
+### Create Location
+POST {{host}}/locations
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW51c2VyQHJpZGVzaGFyZS5jb20iLCJleHAiOjE3NTUxNzI3MDcsImlhdCI6MTc1NTE2OTEwNywic2NvcGUiOiJkZWxldGU6dmVoaWNsZSBjcmVhdGU6Ym9va2luZyBtYW5hZ2U6cm9sZSByZWFkOnJpZGUgdXBkYXRlOnZlaGljbGUgdXBkYXRlOmxvY2F0aW9uIHJlYWQ6Ym9va2luZyByZWFkOmxvY2F0aW9uIGNyZWF0ZTp2ZWhpY2xlIG1hbmFnZTp1c2VyIHVwZGF0ZTpyaWRlIGNyZWF0ZTpsb2NhdGlvbiBkZWxldGU6cmlkZSBkZWxldGU6bG9jYXRpb24gY3JlYXRlOnJhdGluZyBjcmVhdGU6cmlkZSBkZWxldGU6Ym9va2luZyByZWFkOnZlaGljbGUgY2FuY2VsOmJvb2tpbmcifQ.cOg2v7OsKWfzceKD7ezQTq8_8jvAJAqTcQ8NuOIEAJViv67eTHNw9wyRu6MYFh2tXDQ5BodsZP1sBdiBQuaIEI8Cljw_cBelVL4Trrfr7AozNdXAFW7JC24FCZ4F3TCgzyAcHG1Rp1blkWK7u4xzqGiqKdT45ujxnN1f98ZNp02a9ZPMGfl_9Gs0iTmjx-Bn_Y-DRbIizeWKkFcEUqosiJrOmrZKK-GxNCgy86P1Hm3-UP-RThax8tjGPxUTynMepQyflt7ao8Nc8iy4RpPH-4zwo7Li4ZiirG0wdc7TgXPvDRlHifbjNTkqt9zYMuxIZXy1bknGy8N0yejmFVU2EQ
 
 {
-  "email": "admin@m.com",
-  "password": "pass123"
+  "city": "New",
+  "county": "New County"
 }
 
-### Sign Out
-POST {{host}}/auth/signOut
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJSaWRlU2hhcmUiLCJzdWIiOiJhZG1pbkBtLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzE3NTU5MzQ5LCJleHAiOjE3MTc1NjAyNDl9.CoU5dFe44D5CEfKhYTmwwLV6ztxI79U00fBUCY24RW3QFo1oDRauBcTy8-BKmesu5bJz-O6UjzvaUyFErI4Zh1RyiOQoi65Hsad1_kkK-RWBqgLyF78yXVRvNP8GT4m6sC_jC4yzOTKyZ9bFKdZ58xybHWMIcyrNF8zdCjLgAGbPbYWFT6fjZXDT1uOnPIJzEJIhPdvv0yKUgwNwsMNyemS6niZNcaS8DQXIw6-ASRRwHEF3-0-bwpgP7hvIw8XaFgs-me5hFPBpz2MmGGzyraRXNHDkZr969UOKimIT7F311m_mxB0QVv4yToBgrjKw2AEuNc2UWbljUAkJYn_8pntBUPJybmpIozaQPpcsqAv-l4-WDnHyko74gzQJshbwp8gwdGI-m6lAEE06-5Ud3aUw1HVzSO6uPf8dvp-wTM_lmz9A7FixQ8m_cZzjNL7sXaGXltRgxac4sNL9inZ41QD4sgknHCoJRvy7oidXKTlaiUvwiRUFCbKdONfGeVz4KAFBMnzDcAdodaLNlamqOI2t3mpXfVJ_nkJfFNYzga-XgQ8Uq6AuwgH7qe3heWjrWzQhz640zwX8TLHaS-81GtNa-8iVg-bMkTnIWyRL8Q9ZNo7H1V7062mzwJ-jshl_AMB1NTQm-9H039jJvVjO3HKjldsUvvNLQKZlnZeK3ag
-
-{
-  "refreshToken": "ot9op8urf4supa6rmou66drucjsjslqh6krk6bcjc3idafdtd13097unhndbugobf37cccg12avpe1ipr1a81et665rm9dt98to9nriuk8rerk4bnb6j12v3rppb5vr7"
-}

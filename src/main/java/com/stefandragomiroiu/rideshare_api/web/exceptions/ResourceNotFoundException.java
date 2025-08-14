@@ -11,6 +11,10 @@ public class ResourceNotFoundException extends RuntimeException {
     @Serial
     private static final long serialVersionUID = 2L;
 
+    public ResourceNotFoundException(String message) {
+        super(message);
+    }
+
     public <T> ResourceNotFoundException(Class<T> cls, Long id) {
         super(cls.getSimpleName() + " with id " + id + " does not exist!");
     }

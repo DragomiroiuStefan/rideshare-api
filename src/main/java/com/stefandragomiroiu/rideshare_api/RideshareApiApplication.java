@@ -1,11 +1,14 @@
 package com.stefandragomiroiu.rideshare_api;
 
+import com.stefandragomiroiu.rideshare_api.security.RsaKeyProperties;
 import com.stefandragomiroiu.rideshare_api.web.CustomizedErrorAttributes;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+@EnableConfigurationProperties(RsaKeyProperties.class)
 public class RideshareApiApplication {
 
     public static void main(String[] args) {
